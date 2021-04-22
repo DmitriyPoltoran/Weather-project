@@ -64,7 +64,8 @@ definitions:
         type: string       
       location:
         type: string
-
+      temperature:
+        type: string
 
       
       

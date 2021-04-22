@@ -53,9 +53,9 @@ function getEvents(req, res) {
   res.json([{
 
     "id": "" + faker.random.number(),
-    "location": "Minsk, Independece av. 152",
-    "image": "fest.jpg",
-    "date": date,
-
+    "location": faker.address.city(),
+    "image": faker.image.image(),
+    "date": faker.date.future(),
+    // "temperature":faker.random.number() + "°",
   }]);
 }
