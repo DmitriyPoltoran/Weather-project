@@ -23,7 +23,6 @@ class EventsTable extends React.Component {
     return <div>
       <button className="btn" onClick={this.handleReload}>Reload</button>
       <ul>
-        <div>
         <h1>Id</h1>
         {this.state.events.map((event) => <li>{event.id} </li>)}
         <h1>Data</h1>
@@ -34,31 +33,6 @@ class EventsTable extends React.Component {
         {/* {this.state.events.map((event) => <li> {event.temperature}</li>)} */}
         <h1>Image</h1>
         {this.state.events.map((event) => <li> <img src={event.image} alt="" /></li>)} 
-        </div>
-        <div>
-        <h1>Id</h1>
-        {this.state.events.map((event) => <li>{event.id} </li>)}
-        <h1>Data</h1>
-        {this.state.events.map((event) => <li>  {event.date}</li>)}
-        <h1>Location</h1>
-        {this.state.events.map((event) => <li> {event.location}</li>)}
-        {/* <h1>Temperature</h1> */}
-        {/* {this.state.events.map((event) => <li> {event.temperature}</li>)} */}
-        <h1>Image</h1>
-        {this.state.events.map((event) => <li> <img src={event.image} alt="" /></li>)} 
-        </div>
-        <div>
-        <h1>Id</h1>
-        {this.state.events.map((event) => <li>{event.id} </li>)}
-        <h1>Data</h1>
-        {this.state.events.map((event) => <li>  {event.date}</li>)}
-        <h1>Location</h1>
-        {this.state.events.map((event) => <li> {event.location}</li>)}
-        {/* <h1>Temperature</h1> */}
-        {/* {this.state.events.map((event) => <li> {event.temperature}</li>)} */}
-        <h1>Image</h1>
-        {this.state.events.map((event) => <li> <img src={event.image} alt="" /></li>)} 
-        </div>
       </ul>
     </div>
   }
